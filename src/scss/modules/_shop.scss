@@ -1,0 +1,89 @@
+.shop-book {
+  max-width: 830px;
+}
+
+.shop-text {
+  width: 539px;
+
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  color: #fff;
+}
+
+.shop-first-button {
+  border-radius: 60px;
+  background: #fff;
+  padding: 10px 20px;
+  color: #231c20;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.shop-first-button:hover {
+  transform: scale(1.2);
+}
+
+.shop-second-button {
+  border-radius: 60px;
+  border: 1px solid;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.shop-second-button:hover {
+  transform: scale(1.2);
+}
+
+.shop-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.shop-more-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: -110px;
+}
+
+.shop-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.shop {
+  background: linear-gradient(180deg, #362c31, #000000);
+}
+
+.shop-arrow {
+  max-width: 55px;
+  margin: auto;
+  transition: transform 0.2s;
+}
+
+.shop-arrow:hover {
+  transform: scale(1.2);
+}
+
+.shop-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 722px;
+  padding-top: 100px;
+}
+
+.shop-sabre-wet {
+  max-width: 180px;
+  margin-right: 75px;
+  margin-bottom: 40px;
+}

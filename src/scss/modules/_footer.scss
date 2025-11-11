@@ -1,0 +1,42 @@
+.footer {
+  background-color: black;
+  color: white;
+  border-top: solid 1px white;
+  padding: 80px;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-dargaud {
+  max-width: 150px;
+  margin: auto;
+}
+
+.footer-2025 {
+  font-size: 11px;
+}
+
+.footer-website {
+  font-size: 11px;
+}
+
+.footer-more-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 60px;
+}

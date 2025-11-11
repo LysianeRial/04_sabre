@@ -1,0 +1,27 @@
+.header-second-button {
+  font-size: 20px;
+  border-radius: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+
+.header-first-button {
+  font-size: 20px;
+  border-radius: 60px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.header {
+  margin-left: 75px;
+}
+
+.header-group {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
