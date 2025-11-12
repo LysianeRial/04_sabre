@@ -14,42 +14,75 @@
         alt="Couverture page d'accueil"
       />
       <h1>
-        <img class="homepage-title" src="img/titre.png" alt="Titre" />
+        <img
+          id="title"
+          class="homepage-title"
+          src="img/titre.png"
+          alt="Titre"
+        />
       </h1>
     </section>
 
     <header class="header">
       <div class="header-group">
-        <a class="header-first-button">Acheter le livre</a>
+        <a
+          class="header-first-button"
+          href="https://www.dargaud.com/bd/sabre-bda5275580"
+          >Acheter le livre</a
+        >
         <button class="header-second-button">Voir le trailer</button>
       </div>
     </header>
 
     <section class="firstcard">
-      <p class="firstcard-text">Dans l'ère du pléistocène, il y a 15'000 ans</p>
+      <p id="textcard1" class="firstcard-text">
+        Dans l'ère du pléistocène, il y a 15'000 ans
+      </p>
       <img
+        id="card1"
         class="firstcard-mountains"
         src="img/case2.png"
         alt="Carte image forêt enneigée"
       />
       <img
+        id="card2"
         class="firstcard-birds"
         src="img/case1.png"
         alt="Carte image oiseaux"
       />
     </section>
 
+    <section class="imagesnow">
+      <img
+        class="imagesnow-sky"
+        src="img/ciel image montagne.png"
+        alt="Image ciel et neige qui tombe"
+      />
+      <img
+        class="imagesnow-mountains"
+        src="img/montagne image montagnes.png"
+        alt="Image montagnes"
+      />
+      <img
+        class="imagesnow-hills"
+        src="img/coline image montagnes.png"
+        alt="Image montagnes coline"
+      />
+    </section>
+
     <section class="secondcard">
       <p class="secondcard-text">Au milieu de la nature sauvage</p>
       <img
-        class="secondcard-bird-carnivorous"
-        src="img/case3.png"
-        alt="Carte image oiseaux carvivores"
-      />
-      <img
+        id="card4"
         class="secondcard-bird-eye"
         src="img/case4.png"
         alt="Carte image oeil oiseau"
+      />
+      <img
+        id="card3"
+        class="secondcard-bird-carnivorous"
+        src="img/case3.png"
+        alt="Carte image oiseaux carvivores"
       />
     </section>
 
@@ -124,13 +157,17 @@
             </p>
           </div>
           <div class="shop-buttons">
-            <a class="shop-first-button">Acheter le livre</a>
+            <a
+              class="shop-first-button"
+              href="https://www.dargaud.com/bd/sabre-bda5275580"
+              >Acheter le livre</a
+            >
             <button class="shop-second-button">Voir le trailer</button>
           </div>
         </div>
       </div>
       <div class="shop-end">
-        <a class="shop-arrow-link">
+        <a class="shop-arrow-link" href="#top">
           <img
             class="shop-arrow"
             src="img/arrow.png"
@@ -146,7 +183,10 @@
 
     <footer class="footer">
       <div class="footer-icon">
-        <a class="footer-instagram">
+        <a
+          class="footer-instagram"
+          href="https://www.instagram.com/ericferes_/"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -160,7 +200,10 @@
             />
           </svg>
         </a>
-        <a class="footer-twitter">
+        <a
+          class="footer-youtube"
+          href="https://www.youtube.com/@editionsdargaud"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -168,23 +211,23 @@
             viewBox="0 0 32 32"
             fill="none"
           >
-            <path
-              d="M1 16C1 8.92947 1 5.39263 3.19632 3.19632C5.39263 1 8.9279 1 16.0016 1C23.0721 1 26.6074 1 28.8037 3.19632C31 5.39263 31 8.92789 31 16C31 23.0705 31 26.6074 28.8037 28.8037C26.6074 31 23.0721 31 16 31C8.92947 31 5.39421 31 3.19632 28.8037C1.00158 26.6058 1 23.0721 1 16Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M8.10522 23.8949L14.7273 17.2744M14.7273 17.2744L8.10522 8.10547H12.49L17.2742 14.7276L23.8947 8.10547M14.7273 17.2744L19.5084 23.8949H23.8947L17.2742 14.726"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+            <g clip-path="url(#clip0_374_8)">
+              <path
+                d="M14 20L20 16L14 12V20ZM26 0H6C4.33333 0 2.91667 0.583327 1.75 1.75C0.583327 2.91667 0 4.33333 0 6V26C0 27.6667 0.583327 29.0833 1.75 30.25C2.91667 31.4167 4.33333 32 6 32H26C27.6667 32 29.0833 31.4167 30.25 30.25C31.4167 29.0833 32 27.6667 32 26V6C32 4.33333 31.4167 2.91667 30.25 1.75C29.0833 0.583327 27.6667 0 26 0ZM25.8125 19.5625C25.7708 20.3125 25.5104 21.0208 25.0312 21.6875C24.5521 22.3542 23.9792 22.75 23.3125 22.875C18.8541 23.2083 13.9792 23.2083 8.6875 22.875C8.02083 22.7917 7.44792 22.4063 6.96875 21.7188C6.48958 21.0312 6.22917 20.3125 6.1875 19.5625C5.97917 17.1875 5.97917 14.7917 6.1875 12.375C6.22917 11.6667 6.48958 10.9688 6.96875 10.2812C7.44792 9.59375 8.02083 9.20833 8.6875 9.125C13.0209 8.79166 17.8958 8.79166 23.3125 9.125C24.0625 9.16667 24.6562 9.5 25.0938 10.125C25.5313 10.75 25.7708 11.4583 25.8125 12.25C26.0208 14.6667 26.0208 17.1042 25.8125 19.5625Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_374_8">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
           </svg>
         </a>
-        <a class="footer-facebook">
+        <a
+          class="footer-facebook"
+          href="https://www.facebook.com/editions.dargaud"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"

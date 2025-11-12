@@ -9,8 +9,25 @@
 
 .secondcard-bird-carnivorous {
   max-width: 315px;
+  top: 190px;
+  right: 200px;
+  position: absolute;
+  opacity: 1;
 }
 
 .secondcard-bird-eye {
   max-width: 615px;
+  position: absolute;
+  top: 520;
+  right: 400px;
+  opacity: 1;
+}
+
+.secondcard {
+  height: 100vh;
+  // border: 5px solid red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

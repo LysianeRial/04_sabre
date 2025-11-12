@@ -5,13 +5,29 @@
   width: 632px;
   height: 122px;
   margin: auto;
-  margin-top: 390px;
 }
 
 .firstcard-mountains {
   max-width: 220px;
+  position: absolute;
+  opacity: 1;
+  left: 200px;
+  top: 100px;
 }
 
 .firstcard-birds {
   max-width: 210px;
+  position: absolute;
+  top: 520px;
+  left: 300px;
+  opacity: 1;
+}
+
+.firstcard {
+  height: 100vh;
+  // border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }

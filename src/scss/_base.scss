@@ -21,3 +21,8 @@ p {
 button {
   font-family: Raleway;
 }
+
+/* Ajoute ceci dans ton CSS global */
+html {
+  scroll-behavior: smooth;
+}
