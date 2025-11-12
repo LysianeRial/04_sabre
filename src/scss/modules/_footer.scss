@@ -40,3 +40,27 @@
   gap: 12px;
   padding-top: 60px;
 }
+
+.footer-instagram {
+  transition: transform 0.2s;
+}
+
+.footer-instagram:hover {
+  transform: scale(1.2);
+}
+
+.footer-youtube {
+  transition: transform 0.2s;
+}
+
+.footer-youtube:hover {
+  transform: scale(1.2);
+}
+
+.footer-facebook {
+  transition: transform 0.2s;
+}
+
+.footer-facebook:hover {
+  transform: scale(1.2);
+}

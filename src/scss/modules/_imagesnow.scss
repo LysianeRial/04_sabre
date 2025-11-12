@@ -1,0 +1,18 @@
+.imagesnow-group {
+  max-width: 110%;
+  position: absolute;
+  max-height: 300vh;
+  top: 0;
+}
+
+.imagesnow {
+  height: 160vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 5px solid red;
+  top: 100px;
+  overflow: hidden;
+  width: 100vw;
+}

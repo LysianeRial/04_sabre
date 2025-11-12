@@ -4,6 +4,7 @@
   text-align: center;
   width: 967px;
   margin: auto;
+  color: white;
 }
 
 .fifthcard-writer {
@@ -12,6 +13,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .fifthcard-group {
@@ -21,7 +23,19 @@
 }
 
 .fifthcard-tigers-sabre {
-  max-width: 905px;
+  max-width: 705px;
   margin: auto;
-  margin-top: 55px;
+  position: absolute;
+  top: 580px;
+}
+
+.fifthcard {
+  height: 100vh;
+  border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  background-color: black;
 }

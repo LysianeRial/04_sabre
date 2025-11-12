@@ -25,9 +25,10 @@
 
 .secondcard {
   height: 100vh;
-  // border: 5px solid red;
+  border: 5px solid red;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 100px;
 }

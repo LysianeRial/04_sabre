@@ -17,37 +17,114 @@ gsap.to("#title", {
 });
 
 // Premieres cartes A CORRIGER
-
-gsap.to(".firstcard", {
+const timeline1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".firstcard",
     start: "top top",
-    end: "bottom top",
     pin: true,
     scrub: 1,
     markers: true,
-    // name: "first card",
   },
 });
 
-gsap.from("#card1", {
+timeline1.from("#card1", {
+  opacity: 0,
+  x: "-100%",
+});
+
+timeline1.from("#card2", {
+  opacity: 0,
+  x: "480%",
+});
+
+// Deuxiemes cartes
+
+const timeline2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".secondcard",
+    start: "top top",
+    // end: "700px",
+    pin: true,
+    scrub: 1,
+    markers: true,
+  },
+});
+
+timeline2.from("#card4", {
+  opacity: 0,
+  x: "200%",
+});
+
+timeline2.from("#card3", {
+  opacity: 0,
+  x: "180%",
+});
+
+// Troisiemes cartes
+
+gsap.to(".thirdcard", {
+  scrollTrigger: {
+    trigger: ".thirdcard",
+    start: "top top",
+    end: "700px",
+    pin: true,
+    scrub: 1,
+    markers: true,
+  },
+});
+
+gsap.from("#card5", {
   opacity: 0,
   x: "-100%",
   scrollTrigger: {
-    trigger: ".firstcard",
+    trigger: ".thirdcard",
     start: "top top",
-    // end: "bottom center",
+    end: "bottom center",
     scrub: 1,
     markers: true,
     id: "mountain",
   },
 });
 
-gsap.from("#card2", {
-  opacity: 0,
-  x: "480%",
+// Quatriemes cartes
+
+const timeline3 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".firstcard",
+    trigger: ".fourthcard",
+    start: "top top",
+    pin: true,
+    scrub: 1,
+    markers: true,
+  },
+});
+
+timeline3.from("#card6", {
+  opacity: 0,
+  x: "200%",
+});
+
+timeline3.from("#card7", {
+  opacity: 0,
+  x: "180%",
+});
+
+// Image calin tigre et sabre
+
+gsap.to(".imagehug", {
+  scrollTrigger: {
+    trigger: ".imagehug",
+    start: "top top",
+    end: "700px",
+    pin: true,
+    scrub: 1,
+    markers: true,
+  },
+});
+
+gsap.to("#hug", {
+  scale: 1.2,
+  scrollTrigger: {
+    trigger: ".imagehug",
     start: "top top",
     end: "bottom center",
     scrub: 1,
@@ -55,39 +132,26 @@ gsap.from("#card2", {
   },
 });
 
-// Deuxiemes cartes
+// Cinquieme carte
 
-gsap.to(".secondcard", {
+gsap.to(".fifthcard", {
   scrollTrigger: {
-    trigger: ".secondcard",
+    trigger: ".fifthcard",
     start: "top top",
     end: "700px",
     pin: true,
     scrub: 1,
     markers: true,
-    // name: "first card",
   },
 });
 
-gsap.from("#card4", {
+gsap.from("#card8", {
   opacity: 0,
-  x: "200%",
+  x: "-100%",
   scrollTrigger: {
-    trigger: ".secondcard",
-    start: "top+=0% top",
-    end: "bottom 75%",
-    scrub: 1,
-    markers: true,
-  },
-});
-
-gsap.from("#card3", {
-  opacity: 0,
-  x: "180%",
-  scrollTrigger: {
-    trigger: ".secondcard",
-    start: "top+=3%  top",
-    end: "bottom 100%",
+    trigger: ".fifthcard",
+    start: "top top",
+    end: "bottom center",
     scrub: 1,
     markers: true,
   },

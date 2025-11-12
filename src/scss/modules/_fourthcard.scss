@@ -5,12 +5,32 @@
   width: 531px;
   height: 151px;
   margin: auto;
+  color: white;
 }
 
 .fourthcard-zoom-sabre {
   max-width: 300px;
+  position: absolute;
+  top: 320px;
+  right: 160px;
+  opacity: 1;
 }
 
 .fourthcard-dezoom-sabre {
-  max-width: 555px;
+  max-width: 485px;
+  position: absolute;
+  top: 550px;
+  right: 400px;
+  opacity: 1;
+}
+
+.fourthcard {
+  height: 100vh;
+  // border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  background-color: black;
 }
