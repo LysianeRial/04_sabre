@@ -173,7 +173,7 @@ gsap.to("#hug", {
 
 // Cinquieme carte
 
-gsap.to(".fifthcard", {
+const timeline7 = gsap.timeline({
   scrollTrigger: {
     trigger: ".fifthcard",
     start: "top top",
@@ -184,14 +184,66 @@ gsap.to(".fifthcard", {
   },
 });
 
-gsap.from("#card8", {
+timeline7.from("#card8", {
   opacity: 0,
   x: "-100%",
+});
+
+timeline7.to("#card8", {
+  opacity: 0,
+  x: "120%",
+  delay: 0.3,
+});
+
+// Scène final grotte
+
+const timeline6 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".fifthcard",
+    trigger: ".imagecave",
     start: "top top",
-    end: "bottom center",
-    scrub: 1,
+    pin: true,
+    scrub: 2,
     markers: true,
+    duration: 5,
   },
+});
+
+timeline6.to("#hillsfinal", {
+  x: "-100px",
+});
+
+timeline6.to(
+  "#cavefinal",
+  {
+    width: "500vw",
+    delay: 0.3,
+  },
+  0
+);
+
+timeline6.to(
+  "#hillsfinal",
+  {
+    filter: "brightness(0.5) saturate(1) hue-rotate(-150deg)",
+    ease: "power2.out",
+    delay: 0.3,
+  },
+  0
+);
+
+// Click sur sabre sec et mouillé
+
+const sabre1 = document.getElementById(".shop-sabre-wet");
+const sabre2 = document.getElementById(".shop-sabre-wet");
+
+// Quand on clique sur image 1 → on affiche image 2
+sabre1.addEventListener("click", () => {
+  sabre1.style.display = "none";
+  sabre2.style.display = "block";
+});
+
+// Quand on clique sur image 2 → on affiche image 1
+sabre2.addEventListener("click", () => {
+  sabre2.style.display = "none";
+  sabre1.style.display = "block";
 });

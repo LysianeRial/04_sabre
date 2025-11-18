@@ -1,0 +1,17 @@
+.skytigers {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 5px solid red;
+  top: 100px;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.skytigers-mountainsgreen {
+  width: 110%;
+  position: absolute;
+  top: 0;
+}
