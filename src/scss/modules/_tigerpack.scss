@@ -1,0 +1,26 @@
+.tigerpack {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  //   border: 5px solid red;
+  top: 100px;
+  overflow: hidden;
+  width: 100vw;
+}
+.tigerpack-tiger {
+  width: 100%;
+  position: absolute;
+  max-height: 800vh;
+  bottom: -150;
+  left: -00;
+}
+
+.tigerpack-cave {
+  width: 205%;
+  position: absolute;
+  max-height: 800vh;
+  bottom: -80;
+  left: -920;
+}

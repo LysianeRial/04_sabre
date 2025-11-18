@@ -37,6 +37,30 @@ timeline1.from("#card2", {
   x: "480%",
 });
 
+// Image montagnes enneigées
+
+const timeline4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".imagesnow",
+    start: "top top",
+    end: "25%",
+    scrub: 2,
+    markers: true,
+  },
+});
+
+timeline4.from("#sky", {
+  x: "2%",
+});
+
+timeline4.from("#mountainssnow", {
+  x: "-2%",
+});
+
+timeline4.from("#hillssnow", {
+  x: "2%",
+});
+
 // Deuxiemes cartes
 
 const timeline2 = gsap.timeline({
@@ -84,6 +108,21 @@ gsap.from("#card5", {
     markers: true,
     id: "mountain",
   },
+});
+
+// Image meute de tigres devant grotte
+
+const timeline5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".tigerpack",
+    pin: true,
+    scrub: 2,
+    markers: true,
+  },
+});
+
+timeline5.from("#tigerpack", {
+  y: "10%",
 });
 
 // Quatriemes cartes
