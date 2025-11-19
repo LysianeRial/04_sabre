@@ -1,16 +1,23 @@
 .skytigers2 {
-  height: 200vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  border: 5px solid red;
+  //   border: 5px solid red;
   top: 100px;
   overflow: hidden;
   width: 100vw;
 }
 
 .skytigers2-tigers {
+  max-width: 110%;
+  position: absolute;
+  max-height: 300vh;
+  top: 0;
+}
+
+.skytigers2-landscape {
   max-width: 110%;
   position: absolute;
   max-height: 300vh;

@@ -12,7 +12,7 @@ gsap.to("#title", {
     trigger: ".homepage",
     scrub: 1,
     pin: true,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -23,7 +23,7 @@ const timeline1 = gsap.timeline({
     start: "top top",
     pin: true,
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -45,7 +45,7 @@ const timeline4 = gsap.timeline({
     start: "top top",
     end: "25%",
     scrub: 2,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -70,7 +70,7 @@ const timeline2 = gsap.timeline({
     // end: "700px",
     pin: true,
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -84,6 +84,34 @@ timeline2.from("#card3", {
   x: "180%",
 });
 
+// Parallaxe montagnes vertes et tigres 1
+
+const timeline8 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".skytigers",
+    scrub: 2,
+    // markers: true,
+  },
+});
+
+timeline8.from("#mountainsgreen", {
+  y: "5%",
+});
+
+// Parallaxe montagnes vertes et tigres 2
+
+const timeline9 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".skytigers2",
+    scrub: 2,
+    // markers: true,
+  },
+});
+
+timeline9.from("#tigerslandscape2", {
+  y: "5%",
+});
+
 // Troisiemes cartes
 
 gsap.to(".thirdcard", {
@@ -93,7 +121,7 @@ gsap.to(".thirdcard", {
     end: "700px",
     pin: true,
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -105,7 +133,7 @@ gsap.from("#card5", {
     start: "top top",
     end: "bottom center",
     scrub: 1,
-    markers: true,
+    // markers: true,
     id: "mountain",
   },
 });
@@ -115,9 +143,8 @@ gsap.from("#card5", {
 const timeline5 = gsap.timeline({
   scrollTrigger: {
     trigger: ".tigerpack",
-    pin: true,
     scrub: 2,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -133,7 +160,7 @@ const timeline3 = gsap.timeline({
     start: "top top",
     pin: true,
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -156,7 +183,7 @@ gsap.to(".imagehug", {
     end: "700px",
     pin: true,
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -167,7 +194,7 @@ gsap.to("#hug", {
     start: "top top",
     end: "bottom center",
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -180,7 +207,7 @@ const timeline7 = gsap.timeline({
     end: "700px",
     pin: true,
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -203,7 +230,7 @@ const timeline6 = gsap.timeline({
     start: "top top",
     pin: true,
     scrub: 2,
-    markers: true,
+    // markers: true,
     duration: 5,
   },
 });
@@ -231,19 +258,11 @@ timeline6.to(
   0
 );
 
-// Click sur sabre sec et mouillé
+// Cursor
 
-const sabre1 = document.getElementById(".shop-sabre-wet");
-const sabre2 = document.getElementById(".shop-sabre-wet");
+const cursor = document.querySelector(".custom-cursor");
 
-// Quand on clique sur image 1 → on affiche image 2
-sabre1.addEventListener("click", () => {
-  sabre1.style.display = "none";
-  sabre2.style.display = "block";
-});
-
-// Quand on clique sur image 2 → on affiche image 1
-sabre2.addEventListener("click", () => {
-  sabre2.style.display = "none";
-  sabre1.style.display = "block";
+document.addEventListener("mousemove", (e) => {
+  cursor.style.top = e.clientY + "px";
+  cursor.style.left = e.clientX + "px";
 });

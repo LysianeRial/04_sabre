@@ -1,0 +1,13 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* ne bloque pas les clics */
+  font-family: sans-serif;
+  font-weight: bold;
+  color: yellow;
+  font-size: 14px;
+  transform: translate(-50%, -50%); /* centre le texte sur la souris */
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
